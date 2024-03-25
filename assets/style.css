@@ -145,6 +145,16 @@ footer {
     }
 }
 
+main {
+    margin-top: 100px;
+
+    #cadastro, #login {
+        background-color: #1a1a1a;
+        color: #fff;
+        width: 80%;
+        padding: 20px;
+    }
+}
 
 @media(max-width:800px) {
     body {
