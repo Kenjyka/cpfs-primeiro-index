@@ -147,12 +147,37 @@ footer {
 
 
 @media(max-width:800px) {
+    body {
+        overflow-x: hidden;
+    }
     #main_banner{
         flex-direction: column;
+        align-items: center;
         
 
         & > article {
             padding: 0 !important;
+        }
+    }
+
+    footer {
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+
+        font-size: .8em;
+
+        & > .barra-footer {
+            border-right: none;
+        }
+    }
+
+    main {
+        & > #promocoes {
+            & > #title-promocoes {
+                right: unset;
+                width: fit-content;
+            }
+            
         }
     }
 }
