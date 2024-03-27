@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/login.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex fixed-top">
@@ -32,7 +33,7 @@
     <main>
         <div id="cadastro">
             <h1>Faça já seu cadastro</h1>
-            <form action="" method="post">
+            <form onsubmit="event.preventDefault()" method="post">
                 <p>
                     <label for="usuario-c" class="form-label">Nome: </label>
                     <input type="email" id="usuario-c" required placeholder="Usuario" class="form-control">
@@ -41,12 +42,26 @@
                     <label for="senha-c" class="form-label">senha: </label>
                     <input type="password" id="senha-c" required placeholder="senha" class="form-control">
                 </p>
-                <input type="submit" value="Cadastrar">
+                <input type="submit" value="Cadastrar" id="submit-c">
             </form>
         </div>
-        <div id="login">
+        <div id="login" class="none">
+          <h1>Login</h1>
+          <form onsubmit="event.preventDefault()" method="post">
+            <p>
+                <label for="usuario-l" class="form-label">Nome: </label>
+                <input type="email" id="usuario-l" required placeholder="Usuario" class="form-control">
+            </p>
+            <p>
+                <label for="senha-l" class="form-label">senha: </label>
+                <input type="password" id="senha-l" required placeholder="senha" class="form-control">
+            </p>
+            <input type="submit" value="Logar" id="submit-l">
+        </form>
         </div>
     </main>
       
+
+    <script src="assets/main.js"></script>
 </body>
 </html>
